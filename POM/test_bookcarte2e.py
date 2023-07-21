@@ -19,7 +19,6 @@ def test_bk_login_with_valid_user(set_up_tear_down):
     login_bk = LoginPageBK(page)
     login_bk.user_Login("ortoni", "Pass1234")
     login_bk.verify_login_sucess()
-    page.screenshot(path="POMexample.png")
     
 def test_bk_login_with_invalid_user(set_up_tear_down):
     browser = set_up_tear_down
@@ -28,7 +27,6 @@ def test_bk_login_with_invalid_user(set_up_tear_down):
     login_bk = LoginPageBK(page)
     login_bk.user_Login("ortoni", "Pass1234xxxx")
     login_bk.verify_login_unsucess("Username or Password is incorrect.")
-    page.screenshot(path="POMexample.png")
     print(page.title())
     
 def test_logout_bk_user(set_up_tear_down):
