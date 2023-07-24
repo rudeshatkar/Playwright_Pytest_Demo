@@ -10,7 +10,6 @@ class SearchBook:
         self.book_card_title = page.locator(".card-title a strong")
         self.book_title = page.locator(".table tr:nth-child(1) td:nth-child(2)")
         self.book_auther = page.locator(".table tr:nth-child(2) td:nth-child(2)")
-        self.clear_search_btn = page.locator("")
         
       
      def search_a_book(self, bookname):
